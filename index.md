@@ -5,7 +5,7 @@ title: Shards.io
 
 ### Big Data is manageable
 
-Building data warehouses up to hundreds of terabytes is what we are good at.
+Building data warehouses up to hundreds of terabytes is what we aim at.
 
 ### Data Analysis is fun
 
