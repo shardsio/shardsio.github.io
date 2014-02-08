@@ -9,7 +9,7 @@ Building data warehouses up to hundreds of terabytes is what we aim at.
 
 ### Data Analysis is fun
 
-Online data graphs via web interface and full support of SQL, R and Pandas make a distributed data analisys a job data sientists enjoy.
+Online data graphs via web interface and full support of SQL, R and Pandas make a distributed data analisys a job data scientists enjoy.
 
 ### Complexity is a myth
 
