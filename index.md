@@ -11,8 +11,8 @@ Building data warehouses up to hundreds of terabytes is what we aim at.
 
 Online data graphs via web interface and full support of SQL, R and Pandas make a distributed data analisys a job data scientists enjoy.
 
-### Complexity is a myth
+### Data maintenance is simple
 
 Automation of complex things is what we bet on.
-Hardware, operating systems, databases, monitoring, deployment, provisioning...
+Hardware, operating systems, monitoring, deployment, replication, backup, recovery...
 All in one solution makes these all just simple.
