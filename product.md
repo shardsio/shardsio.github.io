@@ -5,7 +5,7 @@ title: Product and Services
 
 ### Product and Services
 
-Shards.io is a platform for processing large volumes of structured and semi-structured data based on opensource technologies.
+Shards.io is a platform for processing large volumes of structured and semi-structured data based on open source technologies.
 It best suits for hybrid transactional/analytical type of data load and ensures online analysis capabilities.
 
 We provide tools for building and managing big clusters of Postgresql databases on commodity hardware 

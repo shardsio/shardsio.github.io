@@ -9,7 +9,7 @@ Building data warehouses up to hundreds of terabytes is what we aim at.
 
 ### Data Analysis is fun
 
-Framework with full support of SQL and Pandas make a distributed data analisys a job data scientists enjoy.
+Framework with full support of SQL and Pandas makes a distributed data analisys a job data scientists enjoy.
 
 ### Data Maintenance is simple
 
