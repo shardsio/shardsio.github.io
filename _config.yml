@@ -5,4 +5,6 @@ footer: |
     This project is maintained by <a href="mailto:sasha@shards.io">Aliaksandr Aliashkevich</a><br>
     Prague, Czech Republic</p>
     </footer>
+include: [./articles/]
 
+markdown: redcarpet
