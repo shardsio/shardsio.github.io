@@ -7,6 +7,6 @@ footer: |
     Prague, Czech Republic
     </p>
     </footer>
-include: [./articles/]
+include: [./doc/]
 
 markdown: redcarpet

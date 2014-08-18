@@ -11,4 +11,4 @@ It best suits for hybrid transactional/analytical type of data load and ensures 
 We provide tools for building and managing big clusters of Postgresql databases on commodity hardware 
 which cover installation of software and system setup, hosts provisioning and monitoring, building and deployment utilities.
 
-Shards.io offers assitance in creating ultimate products which need to handle high load and data processing performance.
+Shards.io offers assistance in creating ultimate products which need to handle high load and data processing performance.

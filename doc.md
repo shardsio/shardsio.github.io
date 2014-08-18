@@ -3,4 +3,4 @@ layout: doc
 title: Contents
 ---
 
-- [Sharding Overview](articles/sharding.html)
+- [Sharding Overview](doc/sharding.html)

@@ -7,8 +7,8 @@ title: Sharding Overview
 Sharding is a common technique used for horizontal database scaling. 
 The main idea behind sharding is splitting a database to several ones and keeping them on different hosts.
 More hosts can handle bigger load, also they can process data faster since the parallelization of work.
-There are several disadvantates of this approach such as more complex administration and some limitations of distributed data model.
-We will address this questinos later in more details, 
+There are several disadvantages of this approach such as more complex administration and some limitations of distributed data model.
+We will address this questions later in more details, 
 but in general they are solvable and shouldn't stop you from your way to the shared nothing architecture of your database.
 
 Let's consider different types of application design when using sharding.
@@ -22,13 +22,13 @@ When more services working with your database appear a changing shards configura
 since you need to change configuration for all of your services.
 
 The second type is *Transparent sharding or MPP database*.
-Such solutions suppose that application communicates with database as it wasn't distributed 
+Such solutions suppose that application communicates with database as if it wasn't distributed 
 and a database engine handles the distribution logic itself.
 Sounds great but there are several gotchas as well. 
 In order to supply ACID in MPP database there should exist a global transaction manager responsible for locking.
 And such manager becomes a bottleneck in case of big transactional load.
 Another disadvantage of known open source implementations based on Postgresql is delay with releases in comparison with the parent.
-It means that you have to work with several years old postgresql core, not always having all neccessary patches and missing new cool features.
+It means that you have to work with several years old postgresql core, not always having all necessary patches and missing new cool features.
 We will not consider commercial MPP database vendors here but in general with them the following rule works pretty well: big data require big money.
 
 And the third option is *Map/Reduce approach*.
@@ -37,7 +37,7 @@ But there exists a layer of logic in database which is responsible for splitting
 and post processing the obtained result before returning it to an application.
 This is the most interesting option since it doesn't have scalability issues like MPP 
 and it ensures better design of application especially if you like service oriented architectures. 
-The data processing logic stays inside the database where you have all the neccessary tools for that like SQL.
+The data processing logic stays inside the database where you have all the necessary tools for that like SQL.
 
 Surprisingly doing map/reduce in SQL is extremely easy. 
 For example let's take a simple table with some stats about web sites with the following structure:
@@ -82,7 +82,7 @@ LIMIT 10
 ```
 
 Here we see that first we run usual SQL for counting urls on each shard.
-Results returned back from shards as a single dataset serialized in json format.
-So we get data out of json and summarize counts from each shard and do the final sorting.
+Results returned back from shards as a single dataset serialised in json format.
+So we get data out of json and summarise counts from each shard and do the final sorting.
 
 
