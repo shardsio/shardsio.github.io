@@ -7,6 +7,9 @@ title: Sharding Overview
 Sharding is a common technique used for horizontal database scaling. 
 The main idea behind sharding is splitting a database to several ones and keeping them on different hosts.
 More hosts can handle bigger load, also they can process data faster since the parallelization of work.
+
+![shards picture](/images/shards1.png)
+
 There are several disadvantages of this approach such as more complex administration and some limitations of distributed data model.
 We will address this questions later in more details, 
 but in general they are solvable and shouldn't stop you from your way to the shared nothing architecture of your database.
