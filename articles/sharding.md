@@ -42,44 +42,44 @@ The data processing logic stays inside the database where you have all the necce
 Surprisingly doing map/reduce in SQL is extremely easy. 
 For example let's take a simple table with some stats about web sites with the following structure:
     
-    ``` yaml
-    table: web_stat
-    columns:
-        - url: text
-        - visited_at: timestamptz
-    ```
+``` ruby
+table: web_stat
+columns:
+    - url: text
+    - visited_at: timestamptz
+```
 
 In single instance database in order to get 10 most popular URLs we would run query like that:
 
-    ``` sql
+``` postgresql
+SELECT 
+    url, 
+    COUNT(*) cnt 
+FROM web_stat
+GROUP BY url
+ORDER BY cnt DESC
+LIMIT 10;
+```
+
+Now with distributed database it looks a bit longer:
+
+``` postgresql
+WITH s(v) AS (
+SELECT shards.from_all($$
     SELECT 
         url, 
         COUNT(*) cnt 
     FROM web_stat
     GROUP BY url
-    ORDER BY cnt DESC
-    LIMIT 10;
-    ```
-
-Now with distributed database it looks a bit longer:
-
-    ``` sql
-    WITH s(v) AS (
-    SELECT shards.from_all($$
-        SELECT 
-            url, 
-            COUNT(*) cnt 
-        FROM web_stat
-        GROUP BY url
-    $$))
-    SELECT 
-        v->>'url' url, 
-        SUM((v->>'cnt')::INTEGER) cnt 
-    FROM s
-    GROUP BY url
-    ORDER BY cnt DESC
-    LIMIT 10
-    ```
+$$))
+SELECT 
+    v->>'url' url, 
+    SUM((v->>'cnt')::INTEGER) cnt 
+FROM s
+GROUP BY url
+ORDER BY cnt DESC
+LIMIT 10
+```
 
 Here we see that first we run usual SQL for counting urls on each shard.
 Results returned back from shards as a single dataset serialized in json format.

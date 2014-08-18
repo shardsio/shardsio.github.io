@@ -2,8 +2,10 @@ motto: <p class="moto">The way from data to the knowledge</p>
 footer: |
     <footer>
     <p>
-    This project is maintained by <a href="mailto:sasha@shards.io">Aliaksandr Aliashkevich</a><br>
-    Prague, Czech Republic</p>
+    This project is maintained by <br> 
+    <a href="mailto:sasha@shards.io">Aliaksandr Aliashkevich</a> <br>
+    Prague, Czech Republic
+    </p>
     </footer>
 include: [./articles/]
 
