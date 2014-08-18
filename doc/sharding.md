@@ -20,6 +20,8 @@ The first one is the most obvious one: *Client side sharding or sharding aware a
 This means that you have several databases and your application knows about that, 
 moreover application distributes the data between shards itself.
 
+![shards picture](/images/shards2.png)
+
 Such design usually requires writing some kind of frameworks on application side for working with shards.
 When more services working with your database appear a changing shards configuration can become a problem, 
 since you need to change configuration for all of your services.
@@ -27,6 +29,9 @@ since you need to change configuration for all of your services.
 The second type is *Transparent sharding or MPP database*.
 Such solutions suppose that application communicates with database as if it wasn't distributed 
 and a database engine handles the distribution logic itself.
+
+![shards picture](/images/shards3.png)
+
 Sounds great but there are several gotchas as well. 
 In order to supply ACID in MPP database there should exist a global transaction manager responsible for locking.
 And such manager becomes a bottleneck in case of big transactional load.
@@ -38,6 +43,9 @@ And the third option is *Map/Reduce approach*.
 It means that application still doesn't know about distributed nature of database infrastructure.
 But there exists a layer of logic in database which is responsible for splitting queries between shards 
 and post processing the obtained result before returning it to an application.
+
+![shards picture](/images/shards4.png)
+
 This is the most interesting option since it doesn't have scalability issues like MPP 
 and it ensures better design of application especially if you like service oriented architectures. 
 The data processing logic stays inside the database where you have all the necessary tools for that like SQL.
