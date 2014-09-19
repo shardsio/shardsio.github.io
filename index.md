@@ -1,18 +1,16 @@
 ---
 layout: index
-title: Shards.io
+title: Product and Services
 ---
 
-### Big Data is manageable
+### Product and Services
 
-Building data warehouses up to hundreds of terabytes is what we aim at.
+**Shards.io** is a cloud ready database platform built on open source technologies 
+for processing large volumes of structured and semi-structured data.
+It best suits for hybrid transactional-analytical type of data load 
+and ensures online analysis capabilities on distributed hardware infrastructure.
 
-### Data Analysis is fun
+We provide tools for building and managing big clusters of Postgresql databases on commodity hardware 
+which cover installation of software and system setup, hosts provisioning and monitoring, building and deployment utilities.
 
-Framework with full support of SQL and Pandas makes a distributed data analysis a job data scientists enjoy.
-
-### Data Maintenance is simple
-
-Automation of complex things is what we bet on.
-Hardware, operating systems, monitoring, deployment, replication, backup, recovery...
-All in one solution makes these all just simple.
+**Shards.io** offers assistance in creating ultimate products which need to handle high load and data processing performance.
