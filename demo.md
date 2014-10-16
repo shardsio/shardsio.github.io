@@ -154,7 +154,7 @@ SELECT shards.from_all($$
 $$)
 )
 SELECT
-v->>'customer_id' AS cusomer_id,
+v->>'customer_id' AS customer_id,
 (v->>'transactions')::INTEGER AS transactions,
 v->>'currency' AS currency,
 v->>'segment' AS segment
@@ -163,7 +163,7 @@ ORDER BY transactions DESC
 LIMIT 1
 ```
 
-     cusomer_id | transactions | currency  | segment 
+     customer_id | transactions | currency  | segment 
     ------------+--------------+-----------+---------
      15064      |            3 | CZK       | LAM
     (1 row)
