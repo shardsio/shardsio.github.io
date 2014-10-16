@@ -4,14 +4,14 @@ title: Demo
 ---
 
 After requesting a demo access you will receive an email with credential to access a demo **shards.io** cluster.
-The cluster will be available for 3 days.
+The cluster will be available for 3 day after creation.
 
 ### Cluster description
 
 Each demo cluster is installed on a single server with 2 Core processor, 4 GB RAM and 60 GB of SSD.
 Cluster consists of 5 databases: *demo*, *demo\_00*, *demo\_01*, *demo\_02*, *demo\_03*.
 
-The *demo* database is an entry point you usually want to connect to with standard Postgresql tools like pgAdmin or psql.
+The *demo* database is an entry point you usually want to connect to using standard Postgresql tools like pgAdmin or psql.
 This is a usual Postgresql database and you are free to use it for storing your data and running queries over it.
 
 Databases *demo_NN* are shards. These are also normal Postgresql databases but intended for distributed data.
@@ -24,7 +24,7 @@ Data are provided by Seznam.cz and CCS companies for [Enterprise Data Hackathon]
 ### Seznam.cz
 
 Data from Seznam.cz is a good example of semi-structured data represented in JSON format.
-Since it's a document like structures we store each JSON in a table **seznam.docs**. 
+Since it's a document like structure we store each JSON in a field *doc* of table **seznam.docs**.
 The table is distributed over shards evenly. So each shard contains only part of the entire dataset.
 
 Here are the sample queries you can run on *demo* database in order to get information about seznam documents from all shards.
@@ -61,7 +61,7 @@ SELECT shards.from_all($$
     LIMIT 10
 $$)
 )
-SELECT v->'doc' FROM v
+SELECT v->'doc'->>'query' AS query FROM v
 ORDER BY to_timestamp((v->'doc'->>'time')::FLOAT) DESC
 LIMIT 10
 ```
