@@ -4,7 +4,7 @@ title: Demo
 ---
 
 After requesting a demo access you will receive an email with credential to access a demo **shards.io** cluster.
-The cluster will be available for 3 day after creation.
+The cluster will be available for 3 days after creation.
 
 ### Cluster description
 
