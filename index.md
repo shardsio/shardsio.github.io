@@ -16,3 +16,8 @@ which cover installation of software and system setup, hosts provisioning and mo
 **Shards.io** offers assistance in creating ultimate products which need to handle high load and data processing performance.
 
 [Czech press about us] (http://connect.zive.cz/clanky/v-praze-vznika-slibny-databazovy-a-big-data-projekt/sc-320-a-173626/default.aspx)
+
+[Tech partners at Enterprise Data Hackathon] (http://enterprise.hackathon.bi)
+
+![Tech partners at Enterprise Data Hackathon] (/images/partners.jpg)
+
