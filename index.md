@@ -17,7 +17,7 @@ which cover installation of software and system setup, hosts provisioning and mo
 
 [Czech press about us] (http://connect.zive.cz/clanky/v-praze-vznika-slibny-databazovy-a-big-data-projekt/sc-320-a-173626/default.aspx)
 
-[Tech partners at Enterprise Data Hackathon] (http://enterprise.hackathon.bi)
+[We are tech partners at Enterprise Data Hackathon] (http://enterprise.hackathon.bi)
 
 ![Tech partners at Enterprise Data Hackathon] (/images/partners.jpg)
 
