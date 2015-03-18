@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: index
 title: Sharding Overview
 ---
 ### Sharding Overview

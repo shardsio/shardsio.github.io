@@ -1,5 +1,5 @@
 ---
-layout: doc
+layout: index
 title: Data Distribution
 ---
 ### Data Distribution

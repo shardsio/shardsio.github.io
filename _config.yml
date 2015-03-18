@@ -1,8 +1,7 @@
-motto: <p class="moto">Cloud database platform</p>
+motto: <p class="moto">Distributed data processing</p>
 footer: |
     <footer>
     <p>
-    This project is maintained by <br> 
     <a href="mailto:sasha@shards.io">Aliaksandr Aliashkevich</a> <br>
     Prague, Czech Republic
     </p>

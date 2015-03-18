@@ -1,23 +1,15 @@
 ---
 layout: index
-title: Product and Services
+title: Contents
 ---
 
-### Product and Services
+- [Sharding Overview](doc/sharding.html)
+- [Data Distribution](doc/data_distribution.html)
 
-**Shards.io** is a cloud ready database platform built on open source technologies 
-for processing large volumes of structured and semi-structured data.
-It is best suited for hybrid transactional-analytical type of data load 
-and ensures online analysis capabilities on distributed hardware infrastructure.
+### Tools
 
-We provide tools for building and managing big clusters of Postgresql databases on commodity hardware 
-which cover installation of software and system setup, hosts provisioning and monitoring, building and deployment utilities.
-
-**Shards.io** offers assistance in creating ultimate products which need to handle high load and data processing performance.
-
-[Czech press about us] (http://connect.zive.cz/clanky/v-praze-vznika-slibny-databazovy-a-big-data-projekt/sc-320-a-173626/default.aspx)
-
-[We are tech partner at Enterprise Data Hackathon] (http://enterprise.hackathon.bi)
-
-![Tech partners at Enterprise Data Hackathon] (/images/partners.jpg)
-
+- [Pgbuild](https://github.com/sasha-alias/pgbuild) - Simple deployment tool for Postgresql written in Python
+- [Go PGQ](https://github.com/sasha-alias/pgq) - Framework for writing queue consumers for PGQ in Golang
+- [Go shards](https://github.com/sasha-alias/shards) - Client library for working with sharded database in Golang
+- [Pgshards](https://github.com/sasha-alias/pgshards) - Set of ansible automation scripts for installing sharded Postgresql cluster
+- [Dadump](https://github.com/sasha-alias/dadump) - Utility for daily dumps management for Postgresql
