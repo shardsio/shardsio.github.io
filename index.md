@@ -13,3 +13,4 @@ title: Contents
 - [Go shards](https://github.com/sasha-alias/shards) - Client library for working with sharded database in Golang
 - [Pgshards](https://github.com/sasha-alias/pgshards) - Set of ansible automation scripts for installing sharded Postgresql cluster
 - [Dadump](https://github.com/sasha-alias/dadump) - Utility for daily dumps management for Postgresql
+- [Pgtoster](https://github.com/sasha-alias/pgtoster) - Unit tests runner for Postgresql sql scripts
