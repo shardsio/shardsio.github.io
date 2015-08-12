@@ -5,6 +5,7 @@ title: Contents
 
 - [Sharding Overview](doc/sharding.html)
 - [Data Distribution](doc/data_distribution.html)
+- [Evolution from SQL scripts to SQL documents](doc/sql_documents.html)
 
 ### Tools
 
