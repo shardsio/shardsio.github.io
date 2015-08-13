@@ -59,6 +59,8 @@ So this dataset can be displayed as a pie chart:
 
 ![](/images/pie_chart.png)
 
+See more chart types in the [SQL Tabs documentation](http://www.sqltabs.com/doc#charts)
+
 
 ### Markdown comments
 
