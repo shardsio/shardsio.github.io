@@ -47,15 +47,15 @@ Thus in order to build a chart from query result we use **chart** annotation:
 SELECT city, COUNT(*) FROM employees GROUP BY city
 ```
 
-Here the query will return a datasaet with number of employees in each city
+The query will return a datasaet with number of employees in each city
 
-city	 | count
----------|---------
-London	 | 245
-Paris	 | 153
-New York | 323
+    city	 | count
+    ---------|---------
+    London	 | 245
+    Paris	 | 153
+    New York | 323
 
-And the following chart will be displayed:
+So this dataset can be displayed as a pie chart:
 
 ![](/images/pie_chart.png)
 
@@ -77,15 +77,16 @@ This type of comments in the beginning or in the end of each SQL block will be t
 ## Number of employees by cities
 **/
 --- chart pie
-select city, COUNT(*) from employees
-group by city
+SELECT city, COUNT(*) FROM employees GROUP BY city
 
 /**
-This is an example of SQL document
+This is an example of SQL document.
+
+Visit [www.sqltabs.com](http://www.sqltabs.com) for more details
 **/
 ```
 
-The complete output of the above SQL document is available [here](http://www.sqltabs.com/api/1.0/docs/6b28b79e0357cce98eb1f1403b1e7075)
+The complete output of the above SQL document is available [here](http://www.sqltabs.com/api/1.0/docs/f3cadc311183668313d2c3ad899fe19e)
 
 ### 
 
