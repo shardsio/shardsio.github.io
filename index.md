@@ -9,6 +9,7 @@ title: Contents
 
 ### Tools
 
+- [SQL Tabs](https://www.sqltabs.com) - Rich SQL console for Postgresql
 - [Pgbuild](https://github.com/sasha-alias/pgbuild) - Simple deployment tool for Postgresql written in Python
 - [Go PGQ](https://github.com/sasha-alias/pgq) - Framework for writing queue consumers for PGQ in Golang
 - [Go shards](https://github.com/sasha-alias/shards) - Client library for working with sharded database in Golang
